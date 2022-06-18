@@ -1,5 +1,8 @@
-<<<<<<< HEAD
-=======
+String  		https://github.com/plusw/learnJavaProject/blob/main/md/String.md
+StringBuilder   https://github.com/plusw/learnJavaProject/blob/main/md/StringBuilder.md
+ArrayList 		https://github.com/plusw/learnJavaProject/blob/main/md/ArrayList.md
+
+------------------------------------------------
 # mynotebook
 
 
@@ -131,4 +134,3 @@ StringBuilder("abc");//String转StringBuilder
 String a="asdf"; a.equals("aaa");//"aaa".equals(a)这种方法比较好，常量在前，不会发生空指针异常
 
 System.out.println("hello\tworld");
->>>>>>> a19acb6146b75717cbfd1668740c9694fe468cf5
