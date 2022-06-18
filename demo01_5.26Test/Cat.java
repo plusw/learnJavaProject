@@ -4,7 +4,7 @@ public class Cat{
 		System.out.println('a');
 		System.out.println("18");
 		System.out.println("1.8");
-		System.out.println("false");
+		System.out.println("hello\tworld");
 		
 		st1:while(true){
 			{

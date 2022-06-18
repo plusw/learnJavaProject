@@ -105,4 +105,30 @@ a.subString(2,4);//字符串截取2到4
 a.replace("old","new");//字符串替换
 
 a.split(',');//以","切割字符串为字符串数组
+
+StringBulider是可变的，可以提供字符串操作效率
+
+System.currentTimeMillis();//获取1970年1月1日0时0分0秒以来的毫秒数
+
+StringBuilder sb=new StringBuilder();
+sb.append("abc");//字符串拼接
+
+StringBuilder常用方法:
+
+sb.append(a);
+
+sb.reverse()//字符串倒过来（取反）
+
+sb.length()；
+
+sb.toString();
+
+sb.replace(1,2,"a");//根据索引替换
+
+
+StringBuilder("abc");//String转StringBuilder
+
+String a="asdf"; a.equals("aaa");//"aaa".equals(a)这种方法比较好，常量在前，不会发生空指针异常
+
+System.out.println("hello\tworld");
 >>>>>>> a19acb6146b75717cbfd1668740c9694fe468cf5
