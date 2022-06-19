@@ -7,7 +7,7 @@
 [ArrayList](https://github.com/plusw/learnJavaProject/blob/main/md/ArrayList.md)
 
 ## javaSE面向对象
-[ArrayList](https://github.com/plusw/learnJavaProject/blob/main/md/继承.md)
+[继承](https://github.com/plusw/learnJavaProject/blob/main/md/继承.md)
 ------------------------------------------------
 ## 零散知识点
 
