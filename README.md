@@ -10,6 +10,9 @@
 ## javaSE面向对象
 [继承](https://github.com/plusw/learnJavaProject/blob/main/md/继承.md)
 
+## QUESTION
+[QUESTION](https://github.com/plusw/learnJavaProject/blob/main/md/question.md)
+
 ## 零散知识点
 
 char aaa='A'
