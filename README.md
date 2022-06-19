@@ -1,9 +1,6 @@
 ## javaSE基础
-<<<<<<< HEAD
 [int](https://github.com/plusw/learnJavaProject/blob/main/md/int.md)
 
-=======
->>>>>>> eb641c04be03b39d360121d9bd621558bbb6503b
 [String](https://github.com/plusw/learnJavaProject/blob/main/md/String.md)
 
 [StringBuilder](https://github.com/plusw/learnJavaProject/blob/main/md/StringBuilder.md)
