@@ -1,11 +1,15 @@
+## javaSE基础
+
 [String](https://github.com/plusw/learnJavaProject/blob/main/md/String.md)
 
 [StringBuilder](https://github.com/plusw/learnJavaProject/blob/main/md/StringBuilder.md)
 
 [ArrayList](https://github.com/plusw/learnJavaProject/blob/main/md/ArrayList.md)
 
+## javaSE进阶
+
 ------------------------------------------------
-# mynotebook
+### 零散知识点
 
 
 int num = (int) 100L
