@@ -6,7 +6,7 @@
 
 [ArrayList](https://github.com/plusw/learnJavaProject/blob/main/md/ArrayList.md)
 
-## javaSE进阶
+## javaSE面向对象
 
 ------------------------------------------------
 ## 零散知识点
