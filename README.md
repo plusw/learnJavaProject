@@ -23,7 +23,6 @@ Unicode码表 万国表
 
 System.out.println("JAVA"+20)    为"JAVA20"
 
-
 int a=10;
 ++a;
 System.out.println(a);/*a为11*/
@@ -81,54 +80,6 @@ System.out.println(arr.length)    //获取数组长度
 
 二维数组储存一维数组的时候是储存其地址
 
-String的值创建后不可改变，变的是指向的地址
-
-System.out.println("asd"); //打印String类不会打印其地址
-
-以""创建的字符串，会先在字符串常量池中寻找,没有则会创建（有且仅有一个）
-
-System.out.println("abc"=="ab" +"c")//为false 因为生成的字符串是在堆内存中，不在堆中的常量池里
-
-System.out.println("abc"=="a"+"b" +"c"); //为true，java有常量优化机制,三个常量加会自动拼接成"abc"
-
-a.equals(b)//equals比较的是内容,==比较的是地址
-
-a.equalsIgnoreCase(b)//忽略大小写
-
-a.charAt(5);//返回字符串索引5处的字符
-
-a.toCharArray();//返回字符数组
-
-a.subString(2);//字符串截取2到末尾
-
-a.subString(2,4);//字符串截取2到4
-
-a.replace("old","new");//字符串替换
-
-a.split(',');//以","切割字符串为字符串数组
-
-StringBulider是可变的，可以提供字符串操作效率
-
 System.currentTimeMillis();//获取1970年1月1日0时0分0秒以来的毫秒数
-
-StringBuilder sb=new StringBuilder();
-sb.append("abc");//字符串拼接
-
-StringBuilder常用方法:
-
-sb.append(a);
-
-sb.reverse()//字符串倒过来（取反）
-
-sb.length()；
-
-sb.toString();
-
-sb.replace(1,2,"a");//根据索引替换
-
-
-StringBuilder("abc");//String转StringBuilder
-
-String a="asdf"; a.equals("aaa");//"aaa".equals(a)这种方法比较好，常量在前，不会发生空指针异常
 
 System.out.println("hello\tworld");
