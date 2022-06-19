@@ -6,10 +6,8 @@ public class Cat{
 		System.out.println("1.8");
 		System.out.println("hello\tworld");
 		
-		st1:while(true){
-			{
-				break ;
-				}
-			}
+		String x="ab";
+		System.out.println("abc"==x +"c");
+		
 	}
 }
