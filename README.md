@@ -1,8 +1,8 @@
-String  		https://github.com/plusw/learnJavaProject/blob/main/md/String.md
+[String](https://github.com/plusw/learnJavaProject/blob/main/md/String.md)
 
-StringBuilder   https://github.com/plusw/learnJavaProject/blob/main/md/StringBuilder.md
+[StringBuilder] (https://github.com/plusw/learnJavaProject/blob/main/md/StringBuilder.md)
 
-ArrayList 		https://github.com/plusw/learnJavaProject/blob/main/md/ArrayList.md
+[ArrayList] (https://github.com/plusw/learnJavaProject/blob/main/md/ArrayList.md)
 
 ------------------------------------------------
 # mynotebook
