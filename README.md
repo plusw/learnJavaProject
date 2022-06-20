@@ -10,6 +10,8 @@
 ## javaSE面向对象
 [继承](https://github.com/plusw/learnJavaProject/blob/main/md/继承.md)
 
+[static关键字](https://github.com/plusw/learnJavaProject/blob/main/md/static.md)
+
 ## QUESTION
 [QUESTION](https://github.com/plusw/learnJavaProject/blob/main/md/question.md)
 
