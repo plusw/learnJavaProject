@@ -88,3 +88,9 @@ System.out.println(arr.length)    //获取数组长度
 System.currentTimeMillis();//获取1970年1月1日0时0分0秒以来的毫秒数
 
 System.out.println("hello\tworld");
+
+final修饰的变量只能赋值一次。
+
+final 修饰的方法不能被重写
+
+常量命名规范：所有字母大写
