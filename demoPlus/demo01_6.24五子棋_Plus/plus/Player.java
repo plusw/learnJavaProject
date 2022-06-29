@@ -10,9 +10,11 @@ import java.awt.event.WindowEvent;
 
 import javax.swing.JPanel;
 public class Player{
-	boolean first=true;
-	String pieceColor="black";
-	Player(Record record,JPanel map,Map gobangMap){
+	String ifFirst;
+	String pieceColor;
+	Player(Record record,JPanel map,Map gobangMap,String ifFirst,String pieceColor){
+		this.ifFirst=ifFirst;
+		this.pieceColor=pieceColor;
 		play(record,map,gobangMap);
 	};
 	/*
@@ -36,29 +38,45 @@ public class Player{
 	public void play(Record record,JPanel map,Map gobangMap){
 		map.addMouseListener(new MouseAdapter() {
 			public void mouseClicked(MouseEvent e) {
-				if(first==true){
-					if(record.step==0){//轮到自己下
-						int[] location=new int[2];
-						location[0] = (int) (e.getX() / gobangMap.ROW_WIDTH);//棋盘上X值
-						location[1] = (int) (e.getY() / gobangMap.ROW_WIDTH);
-						int x=location[0];
-						int y=location[1];
-						System.out.println("x::"+location[0]);
-						System.out.println("y:"+location[1]);
-						record.step++;
-						record.record[record.step][x][y]=pieceColor;
-						
-						
+				System.out.println("鼠标点击了一下");
+				System.out.println(record.ifChange);
+				if(record.ifChange=="unchange"){
+					
+					if(ifFirst=="first"){
+						if(record.step%2==0){//轮到自己下
+							System.out.println("轮到黑棋下");
+							int[] location=new int[2];
+							location[0] = (int) (e.getX() / gobangMap.ROW_WIDTH);//棋盘上X值
+							location[1] = (int) (e.getY() / gobangMap.ROW_WIDTH);
+							int x=location[0];
+							int y=location[1];
+							if(record.record[record.step][x][y]==null){
+								record.step++;
+								record.ifChange="changed";
+								record.record[record.step][x][y]=pieceColor;
+							}
+							
+							
+						}
 					}
+					else if(ifFirst=="second"){//第二个下
+						if(record.step%2==1){//轮到自己下
+							System.out.println("轮到白棋下");
+							int[] location=new int[2];
+							location[0] = (int) (e.getX() / gobangMap.ROW_WIDTH);//棋盘上X值
+							location[1] = (int) (e.getY() / gobangMap.ROW_WIDTH);
+							int x=location[0];
+							int y=location[1];
+							if(record.record[record.step][x][y]==null){
+								record.step++;
+								record.ifChange="changed";
+								record.record[record.step][x][y]=pieceColor; 
+							}
+						}
+					}
+									
 				}
-				/*
-				else{//第二个下
-					if(record.step/2==1){//轮到自己下
-						record.record[record.step][x][y]=pieceColor;
-						record.step++;
-					}
-				}	
-				*/
+				System.out.println(record.ifChange);	
 			}
 			
 		});	

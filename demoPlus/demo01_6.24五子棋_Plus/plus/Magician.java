@@ -55,19 +55,21 @@ public class Magician{
 			g.fillOval(map.SPACE + 11 * map.ROW_WIDTH - 3, map.SPACE + 11 * map.ROW_WIDTH - 3,
 					7, 7);
 			//棋子
-			for (int i = 0; i < map.BOARD_SIZE; i++) {
-				for (int j = 0; j < map.BOARD_SIZE; j++) {
-					if (record.record[record.step][i][j] == "black") {// 绘制黑棋
-						g.setColor(Color.black);
-						g.fillOval(map.SPACE + i * map.ROW_WIDTH - map.ROW_WIDTH / 2, map.SPACE
-								+ j * map.ROW_WIDTH - map.ROW_WIDTH / 2, map.ROW_WIDTH,
-								map.ROW_WIDTH);
-					}
-					if (record.record[record.step][i][j] == "white") {// 绘制白棋
-						g.setColor(Color.white);
-						g.fillOval(map.SPACE + i * map.ROW_WIDTH - map.ROW_WIDTH / 2, map.SPACE
-								+ j * map.ROW_WIDTH - map.ROW_WIDTH / 2, map.ROW_WIDTH,
-								map.ROW_WIDTH);
+			for(int k=1;k<=record.step;k++){
+				for (int i = 0; i < map.BOARD_SIZE; i++) {
+					for (int j = 0; j < map.BOARD_SIZE; j++) {
+						if (record.record[k][i][j] == "black") {// 绘制黑棋
+							g.setColor(Color.black);
+							g.fillOval(map.SPACE + i * map.ROW_WIDTH - map.ROW_WIDTH / 2, map.SPACE
+									+ j * map.ROW_WIDTH - map.ROW_WIDTH / 2, map.ROW_WIDTH,
+									map.ROW_WIDTH);
+						}
+						if (record.record[k][i][j] == "white") {// 绘制白棋
+							g.setColor(Color.white);
+							g.fillOval(map.SPACE + i * map.ROW_WIDTH - map.ROW_WIDTH / 2, map.SPACE
+									+ j * map.ROW_WIDTH - map.ROW_WIDTH / 2, map.ROW_WIDTH,
+									map.ROW_WIDTH);
+						}
 					}
 				}
 			}

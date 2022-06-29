@@ -8,7 +8,9 @@
 /*  5.模拟玩家             Player类被我请来下棋，2个        */
 /*  6.可视化界面           Magician类帮我让以上对象显形     */
 import javax.swing.JPanel;
+import java.util.Arrays;
 public class StartGame{
+	
 	public static void main(String[] args){
 		System.out.println("开始五子棋游戏");
 		
@@ -16,28 +18,19 @@ public class StartGame{
 		Record record=new Record();
 		Magician magician=new Magician();
 		Magician.GobangMapAndPieces map=magician.draw(record,gobangMap);
-		Player human=new Player(record,map,gobangMap);
+		Player human=new Player(record,map,gobangMap,"first","black");
+		Player human2=new Player(record,map,gobangMap,"second","white");
 		//magician.new GobangMapAndPieces();
 		//map=magician.draw(record,gobangMap);//创建jpanel用于player类监听键盘
 		
-		String whoTurn="human";
 		int lastRecordStep=0;
 		while(true){
-			if(whoTurn=="human"){
-				
 				//human.play(record,map,gobangMap);//棋谱,jpanel,map类
-				if(record.step>lastRecordStep){
-					map.repaint();
-					System.out.println("嘿嘿");
-					whoTurn="player2";
-					lastRecordStep=record.step;
-				}
-			}
-			else if(whoTurn=="player2"){
-				
-				//magician.draw(record,gobangMap);
-				//human.play(record,map,gobangMap);
-				//whoTurn="human";
+			if(record.step>lastRecordStep){
+				map.repaint();
+				record.ifChange="unchange";
+				lastRecordStep=record.step;
+				System.out.println(record.ifChange);	
 			}
 		}
 	}
