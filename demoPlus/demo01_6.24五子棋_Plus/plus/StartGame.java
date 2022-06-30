@@ -18,19 +18,28 @@ public class StartGame{
 		Record record=new Record();
 		Magician magician=new Magician();
 		Magician.GobangMapAndPieces map=magician.draw(record,gobangMap);
+		Referee referee=new Referee();
 		Player human=new Player(record,map,gobangMap,"first","black");
 		Player human2=new Player(record,map,gobangMap,"second","white");
+		
 		//magician.new GobangMapAndPieces();
 		//map=magician.draw(record,gobangMap);//创建jpanel用于player类监听键盘
 		
 		int lastRecordStep=0;
 		while(true){
 				//human.play(record,map,gobangMap);//棋谱,jpanel,map类
+				/*
 			if(record.step>lastRecordStep){
 				map.repaint();
+				referee.judgeWinner(record);
 				record.ifChange="unchange";
 				lastRecordStep=record.step;
-				System.out.println(record.ifChange);	
+			}
+			*/
+			if(record.ifChange=="changed"){
+				map.repaint();
+				referee.judgeWinner(record);
+				record.ifChange="unchange";
 			}
 		}
 	}

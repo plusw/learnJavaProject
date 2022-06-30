@@ -38,22 +38,19 @@ public class Player{
 	public void play(Record record,JPanel map,Map gobangMap){
 		map.addMouseListener(new MouseAdapter() {
 			public void mouseClicked(MouseEvent e) {
-				System.out.println("鼠标点击了一下");
-				System.out.println(record.ifChange);
 				if(record.ifChange=="unchange"){
-					
 					if(ifFirst=="first"){
 						if(record.step%2==0){//轮到自己下
-							System.out.println("轮到黑棋下");
 							int[] location=new int[2];
 							location[0] = (int) (e.getX() / gobangMap.ROW_WIDTH);//棋盘上X值
 							location[1] = (int) (e.getY() / gobangMap.ROW_WIDTH);
 							int x=location[0];
 							int y=location[1];
-							if(record.record[record.step][x][y]==null){
+							if(record.nowSituation[x][y]==null){
 								record.step++;
 								record.ifChange="changed";
 								record.record[record.step][x][y]=pieceColor;
+								record.setNowSituation();
 							}
 							
 							
@@ -61,22 +58,21 @@ public class Player{
 					}
 					else if(ifFirst=="second"){//第二个下
 						if(record.step%2==1){//轮到自己下
-							System.out.println("轮到白棋下");
 							int[] location=new int[2];
 							location[0] = (int) (e.getX() / gobangMap.ROW_WIDTH);//棋盘上X值
 							location[1] = (int) (e.getY() / gobangMap.ROW_WIDTH);
 							int x=location[0];
 							int y=location[1];
-							if(record.record[record.step][x][y]==null){
+							if(record.nowSituation[x][y]==null){
 								record.step++;
 								record.ifChange="changed";
 								record.record[record.step][x][y]=pieceColor; 
+								record.setNowSituation();
 							}
 						}
 					}
 									
 				}
-				System.out.println(record.ifChange);	
 			}
 			
 		});	
