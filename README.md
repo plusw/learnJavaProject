@@ -1,4 +1,4 @@
-## javaSE基础
+## javaSE
 [int](https://github.com/plusw/learnJavaProject/blob/main/md/int.md)
 
 [String](https://github.com/plusw/learnJavaProject/blob/main/md/String.md)
@@ -6,6 +6,8 @@
 [StringBuilder](https://github.com/plusw/learnJavaProject/blob/main/md/StringBuilder.md)
 
 [ArrayList](https://github.com/plusw/learnJavaProject/blob/main/md/ArrayList.md)
+
+[多线程](https://github.com/plusw/learnJavaProject/blob/main/md/多线程.md)
 
 ## javaSE面向对象
 [继承](https://github.com/plusw/learnJavaProject/blob/main/md/继承.md)
