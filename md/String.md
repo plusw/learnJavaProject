@@ -1,4 +1,4 @@
-## String 
+## String 常用方法：
 
 String的toLowerCase方法，将字符串中的字符都转为小写。
 
@@ -30,3 +30,5 @@ a.replace("old","new");//字符串替换
 a.split(',');//以","切割字符串为字符串数组
 
 String a="asdf"; a.equals("aaa");//"aaa".equals(a)这种方法比较好，常量在前，不会发生空指针异常
+
+s.startsWith("张");//判断开头的字符

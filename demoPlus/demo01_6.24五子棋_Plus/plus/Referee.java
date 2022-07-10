@@ -11,31 +11,7 @@
 */
 public class Referee{
 	Referee(){};
-	public void judgeWinner(Record record){
-		/*
-		System.out.println(record.nowSituation[0][0]);
-		System.out.println(record.nowSituation[1][0]);
-		System.out.println(record.nowSituation[2][0]);
-		System.out.println(record.nowSituation[3][0]);
-		*/
-		//i表示行 j表示列
-		/*
-		for(int i=0;i<19;i++){
-			System.out.println();
-			for(int j=0;j<19;j++){
-				System.out.print(record.record[record.step][i][j]);
-				System.out.print(" ");
-			}
-		}*/
-		
-		for(int i=0;i<19;i++){
-			System.out.println();
-			for(int j=0;j<19;j++){
-				System.out.print(record.nowSituation[i][j]);
-				System.out.print(" ");
-			}
-		}
-		System.out.println("-----");
+	public String judgeWinner(Record record){
 		//横向找
 		String colorWinner;
 		int whitePieceNum=0;
@@ -44,27 +20,146 @@ public class Referee{
 				whitePieceNum=0;
 				blackPieceNum=0;
 				for (int j = 0; j < 19; j++) {
-					if(record.nowSituation[i][j]=="white"){
+					if(record.nowSituation[j][i]=="white"){
 						whitePieceNum++;
 						if(whitePieceNum==5){
 							colorWinner="white";
 							System.out.println(""+colorWinner+"获得胜利！");
-							break lo;
+							return colorWinner;
 						}
 					}
-					if(record.nowSituation[i][j]=="balck"){
+					if(record.nowSituation[j][i]=="black"){
 						blackPieceNum++;
 						if(blackPieceNum==5){
 							colorWinner="black";
 							System.out.println(""+colorWinner+"获得胜利！");
-							break lo;
+							return colorWinner;
 						}
 					}
 					
 				}
 		}
+		//纵向找
+		whitePieceNum=0;
+		blackPieceNum=0;	
+		for(int i=0;i<19;i++){
+			for(int j=0;j<19;j++){
+				whitePieceNum=0;
+				blackPieceNum=0;
+				if(record.nowSituation[j][i]=="white"){	
+					for(int k=0;k<5;k++){
+						if(record.nowSituation[j][i+k]=="white"){	
+							whitePieceNum++;
+							if(whitePieceNum==5){
+								colorWinner="white";
+								System.out.println(""+colorWinner+"获得胜利！");
+								return colorWinner;
+							}
+						}
+						else{
+							break;
+						}
+					}
+				}
+				if(record.nowSituation[j][i]=="black"){	
+					for(int k=0;k<5;k++){
+						if(record.nowSituation[j][i+k]=="black"){	
+							blackPieceNum++;
+							if(blackPieceNum==5){
+								colorWinner="black";
+								System.out.println(""+colorWinner+"获得胜利！");
+								return colorWinner;
+							}
+						}
+						else{
+							break;
+						}
+					}
+				}
+			}
+		}
+		//斜向下找
+		whitePieceNum=0;
+		blackPieceNum=0;	
+		for(int i=0;i<19;i++){
+			for(int j=0;j<19;j++){
+				whitePieceNum=0;
+				blackPieceNum=0;
+				if(record.nowSituation[j][i]=="white"){	
+					for(int k=0;k<5;k++){
+						if(record.nowSituation[j+k][i+k]=="white"){	
+							whitePieceNum++;
+							if(whitePieceNum==5){
+								colorWinner="white";
+								System.out.println(""+colorWinner+"获得胜利！");
+								return colorWinner;
+							}
+						}
+						else{
+							break;
+						}
+					}
+				}
+				if(record.nowSituation[j][i]=="black"){	
+					for(int k=0;k<5;k++){
+						if(record.nowSituation[j+k][i+k]=="black"){	
+							blackPieceNum++;
+							if(blackPieceNum==5){
+								colorWinner="black";
+								System.out.println(""+colorWinner+"获得胜利！");
+								return colorWinner;
+							}
+						}
+						else{
+							break;
+						}
+					}
+				}
+			}
+		}
+		//斜向上找
+		whitePieceNum=0;
+		blackPieceNum=0;	
+		for(int i=0;i<19;i++){
+			for(int j=0;j<19;j++){
+				whitePieceNum=0;
+				blackPieceNum=0;
+				if(record.nowSituation[j][i]=="white"){	
+					for(int k=0;k<5;k++){
+						if(record.nowSituation[j+k][i-k]=="white"){	
+							whitePieceNum++;
+							if(whitePieceNum==5){
+								colorWinner="white";
+								System.out.println(""+colorWinner+"获得胜利！");
+								return colorWinner;
+							}
+						}
+						else{
+							break;
+						}
+					}
+				}
+				if(record.nowSituation[j][i]=="black"){	
+					for(int k=0;k<5;k++){
+						if(record.nowSituation[j+k][i-k]=="black"){	
+							blackPieceNum++;
+							if(blackPieceNum==5){
+								colorWinner="black";
+								System.out.println(""+colorWinner+"获得胜利！");
+								return colorWinner;
+							}
+						}
+						else{
+							break;
+						}
+					}
+				}
+			}
+		}			
 				
 				
 		
+			
+		return "noWinner";
 	}
 }
