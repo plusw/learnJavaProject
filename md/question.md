@@ -3,3 +3,8 @@
 ```diff
 ! 未解决
 ```
+
+7.10  Callable<String>接口中有个<String>是什么？
+```diff
+! 未解决
+```
