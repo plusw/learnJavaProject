@@ -16,7 +16,7 @@ hm.keySet().stream.forEach(s->System.out.println(s));//双列集合
   
 hm.entrySet().stream.forEach(s->System.out.println(s));//双列集合
   
-Arrays.stream(arr).forEach(s->System.out.println(s));//数字的Stream流方法  
+Arrays.stream(arr).forEach(s->System.out.println(s));//数组的Stream流方法  
   
 Stream.of(1,2,3,4).forEach(s->System.out.println(s));//同种数据类型的Stream流
 
