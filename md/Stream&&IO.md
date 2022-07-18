@@ -29,4 +29,8 @@ Stream流中的常见的中间方法:
   stream.distinct().forEach(s->System.out.println(s));//去重(依赖hashcode和equals方法)
   
   
+  2种终结方法:
+  int a=list.stream().count();//返回流中元素的个数
+  
+  list.forEach(s->System.out.println(s))
   
