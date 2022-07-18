@@ -17,3 +17,16 @@ hm.keySet().stream.forEach(s->System.out.println(s));//双列集合
 Arrays.stream(arr).forEach(s->System.out.println(s));//数字的Stream流方法  
   
 Stream.of(1,2,3,4).forEach(s->System.out.println(s));//同种数据类型的Stream流
+
+Stream流中的常见的中间方法:
+  
+  list.stream().limit(2).forEach(s->System.out.println(s));//提取前面的
+  
+  list1.stream().skip(2).forEach(s->System.out.println(s));//跳过前面的
+  
+  Stream.concat(list.stream(),list2.stream()).forEach(s->System.out.println(s));//合并流
+  
+  stream.distinct().forEach(s->System.out.println(s));//去重(依赖hashcode和equals方法)
+  
+  
+  
