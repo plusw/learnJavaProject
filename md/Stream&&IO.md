@@ -35,3 +35,10 @@ Stream流中的常见的中间方法:
   
   list.forEach(s->System.out.println(s))
   
+  
+  收集方法:
+ Set<Integer> set=list.stream().filter(number->number%2==0).collect(Collectors.toSet());//收集为set集合
+  
+ List<Integer> list1=list.stream().filter(number->number%2==0).collect(Collectors.toList());//收集为list集合
+  
+  
