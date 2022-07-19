@@ -25,6 +25,8 @@ linux:\n
 
 mac:\r
 
+fos.write("\r\n".getBytes());//换行
+
 
 
 
