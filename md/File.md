@@ -33,4 +33,6 @@ File file=new File("F:\\a");
 boolean a=file.isFile();
 boolean b=file.isDirectory();
 
-
+##### file判断文件是否存在
+File file=new File("F:\\a");
+boolean a=file.exists();
