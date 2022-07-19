@@ -8,3 +8,11 @@ FileOutputStream fos =new FileOutputStream(new File("D:\\a.txt"));//参数以文
 fos.write(97);
 
 fos.close();
+
+##### 写数据的3种方式
+byte[] a= {97,98,99};
+for.write(a);//参数是byte数组
+for.write(97);//参数是int
+for.write(a,1,2);//参数有数组，写入的数组起始索引，写入的数组长度
+
+
