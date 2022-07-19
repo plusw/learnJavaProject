@@ -1,6 +1,6 @@
 ## IO流
 IO流分为字节流和字符流，字节流可以操作所有文件，字符流只能操作文本文件
-##### 创建字节输出流对象,写数据
+### 创建字节输出流对象,写数据
 FileOutputStream fos =new FileOutputStream("D:\\a.txt");//参数以路径创建;如果文件不存在会自动创建
 
 FileOutputStream fos =new FileOutputStream(new File("D:\\a.txt"));//参数以文件创建;
@@ -9,7 +9,7 @@ fos.write(97);
 
 fos.close();
 
-##### 写数据的3种方式
+### 写数据的3种方式
 byte[] a= {97,98,99};
 
 for.write(a);//参数是byte数组
@@ -18,7 +18,7 @@ for.write(97);//参数是int
 
 for.write(a,1,2);//参数有数组，写入的数组起始索引，写入的数组长度
 
-##### 字节流写数据换行
+### 字节流写数据换行
 windows换行符:\r\n
 
 linux:\n
@@ -27,10 +27,10 @@ mac:\r
 
 fos.write("\r\n".getBytes());//换行
 
-##### 追加写入
+### 追加写入
 FileOutputStream fos =new FileOutputStream("D:\\a.txt"，true);//第二个参数为true表示打开续写开关
 
-##### 创建字节输入流对象
+### 创建字节输入流对象
 FileInputStream fis =new FileInputStream("D:\\a.txt");//参数以路径
 
 FileInputStream fis =new FileInputStream(new File("D:\\a.txt"));//参数以File
