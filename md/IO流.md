@@ -35,4 +35,4 @@ FileInputStream fis =new FileInputStream("D:\\a.txt");//参数以路径
 
 FileInputStream fis =new FileInputStream(new File("D:\\a.txt"));//参数以File
 
-int a=fis.read();//运行一次，往下读取一个字节,a为编码表中的int 
+int a=fis.read();//运行一次，往下读取一个字节,a为编码表中的int值
