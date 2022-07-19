@@ -24,5 +24,8 @@ boolean b=file.mkdir();//创建单级文件夹
 
 boolean b=file.mkdirs();//创建多级文件夹
 
+#### file删除方法
+File file=new File("F:\\a");
+boolean a=file.delete();//只能删除文件和空文件夹
 
 
