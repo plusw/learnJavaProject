@@ -48,9 +48,7 @@ File file=new File("F:\\");
 File[] files=file.listFiles();
 
 for(File file2 : files){
-
     System.out.println(file2.getName());
-    
 }
 
 
