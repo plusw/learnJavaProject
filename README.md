@@ -1,4 +1,4 @@
-## javaSE
+## javaSE  :blush:
 [int](https://github.com/plusw/learnJavaProject/blob/main/md/int.md)
 
 [String](https://github.com/plusw/learnJavaProject/blob/main/md/String.md)
