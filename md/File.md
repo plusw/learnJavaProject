@@ -16,6 +16,7 @@ File file3=new File(file,path);
 
 ### File常用方法
 
+##### 创建文件和文件夹
 File file=new File(F:\\a.txt);
 
 boolean a=file.createNewFile();//创建文件,不能创建文件夹,如果文件存在会创建失败
@@ -36,3 +37,8 @@ boolean b=file.isDirectory();
 ##### file判断文件是否存在
 File file=new File("F:\\a");
 boolean a=file.exists();
+
+##### file.getName()
+File file=new File("F:\\a");
+String s=file.getName();
+
