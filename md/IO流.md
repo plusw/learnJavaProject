@@ -27,6 +27,6 @@ mac:\r
 
 fos.write("\r\n".getBytes());//换行
 
-
-
+##### 追加写入
+FileOutputStream fos =new FileOutputStream("D:\\a.txt"，true);//第二个参数为true表示打开续写开关
 
