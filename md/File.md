@@ -16,7 +16,7 @@ File file3=new File(file,path);
 
 ### File常用方法
 
-##### 创建文件和文件夹
+##### file创建文件和文件夹
 File file=new File(F:\\a.txt);
 
 boolean a=file.createNewFile();//创建文件,不能创建文件夹,如果文件存在会创建失败
@@ -41,4 +41,14 @@ boolean a=file.exists();
 ##### file获取名字
 File file=new File("F:\\a");
 String s=file.getName();
+
+##### file获取文件夹下的所有文件
+File file=new File("F:\\");
+
+File[] files=file.listFiles();
+
+for(File file2 : files){
+    System.out.println(file2.getName());  
+}
+
 
