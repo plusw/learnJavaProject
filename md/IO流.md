@@ -36,3 +36,20 @@ FileInputStream fis =new FileInputStream("D:\\a.txt");//参数以路径
 FileInputStream fis =new FileInputStream(new File("D:\\a.txt"));//参数以File
 
 int a=fis.read();//运行一次，往下读取一个字节,a为编码表中的int值
+
+#### 文件拷贝
+int read;
+while((read=fis.read())!=-1){
+  fos.write(read); //一个一个读取写入比较慢
+}
+
+#### 文件拷贝，利用字节数组提升拷贝速度
+byte[] bys=new Byte[1024];
+
+int len;
+
+while((len=fis.read(bys))!=-1){//len返回读到有效字节的个数,同时改变bys数组里的值
+
+  fos.write(bys,0,len);
+  
+}
