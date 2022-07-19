@@ -34,3 +34,5 @@ FileOutputStream fos =new FileOutputStream("D:\\a.txt"，true);//第二个参数
 FileInputStream fis =new FileInputStream("D:\\a.txt");//参数以路径
 
 FileInputStream fis =new FileInputStream(new File("D:\\a.txt"));//参数以File
+
+fis.read();
