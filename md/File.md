@@ -19,7 +19,7 @@ File file3=new File(file,path);
 ##### file创建文件和文件夹
 File file=new File(F:\\a.txt);
 
-boolean a=file.createNewFile();//创建文件,不能创建文件夹,如果文件存在会创建失败
+boolean a=file.createNewFile();//创建文件,不能创建文件夹,如果文件存在会创建失败;文件夹要存在否则会报错
 
 boolean b=file.mkdir();//创建单级文件夹
 
