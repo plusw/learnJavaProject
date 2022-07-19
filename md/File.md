@@ -38,7 +38,7 @@ boolean b=file.isDirectory();
 File file=new File("F:\\a");
 boolean a=file.exists();
 
-##### file.getName()
+##### file获取名字
 File file=new File("F:\\a");
 String s=file.getName();
 
