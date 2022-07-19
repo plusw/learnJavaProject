@@ -32,3 +32,6 @@ a.split(',');//以","切割字符串为字符串数组
 String a="asdf"; a.equals("aaa");//"aaa".equals(a)这种方法比较好，常量在前，不会发生空指针异常
 
 s.startsWith("张");//判断开头的字符
+
+##### 字符串转字节数组
+byte[] a=s.getBytes();
