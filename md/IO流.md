@@ -53,3 +53,11 @@ while((len=fis.read(bys))!=-1){//len返回读到有效字节的个数,同时改�
   fos.write(bys,0,len);
   
 }
+
+#### 缓冲流拷贝文件
+BufferedInputStream bis = new BufferedInputStream(new FileInputStream("F:\\a.txt"));//创建字节缓冲输入流  
+BufferedOutputStream bos = new BufferedOutputStream(new FileInputStream("F:\\b.txt")); //创建字节缓冲输出流  
+int c;   
+while((c=bis.read())!=-1){    
+  bos.write(b);  
+}  
