@@ -61,3 +61,12 @@ int c;
 while((c=bis.read())!=-1){    
   bos.write(b);  
 }  
+
+#### 缓冲流+数组拷贝文件
+BufferedInputStream bis = new BufferedInputStream(new FileInputStream("F:\\a.txt"));//创建字节缓冲输入流  
+BufferedOutputStream bos = new BufferedOutputStream(new FileInputStream("F:\\b.txt")); //创建字节缓冲输出流  
+byte[] bys=new byte[1024]; 
+int len;
+while((len=bis.read(bys))!=-1){    
+  bos.write(bys,0,len);  
+}  
