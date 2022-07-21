@@ -1,0 +1,13 @@
+## 字符编码
+
+#### 编码
+String s="天王盖地虎";
+byte[] bys=s.getBytes();//得到中文的二进制编码值  
+byte[] bys=s.getBytes("UTF-8");
+byte[] bys=s.getBytes("GBK");
+
+#### 解码
+byte[] bys={-12,-24,-34};  
+String a=new String(bys);
+String a=new String(bys,"UTF-8");
+String b=new String(bys,"GBK");
