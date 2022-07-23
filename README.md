@@ -9,6 +9,7 @@
 
 ## 零散知识点
 
+类有个隐藏的序列号，serialVerSionUID,是虚拟机根据类的信息自动计算出来的,如果类中的信息有所改变，序列号也会改变  
 char aaa='A'
 System.out.println(aaa+1) 值为66
 
