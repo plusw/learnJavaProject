@@ -12,10 +12,10 @@ prop.remove("赛文");//删除元素
 System.out.println(prop.get("迪迦"));//打印奥特曼
 System.out.println(prop.getProperty("迪迦"));//另一种根据key获取value的方法
 #### 获取所有键值
-##### get(key)获得键值
+##### keySet()获得键值
 Set<Object> keys=prop.keySet();    
 for(Object key:keys){  
-   Object value=prop.get(key);  
+   Object value=prop.get(key);  //获取value  
    System.out.println(key);  
 };
 ##### stringPropertyNames()获取键值
