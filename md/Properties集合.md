@@ -35,6 +35,6 @@ for(Map.Entry<Object,Object>entry:entries){
 Properties prop=new Properties();  
 FileReader fr=new FileReader("prop.properties");  
 prop.load(fr);//集合加载文件中的数据  
-fr.close();
+fr.close();  
 System.out.println(prop);
 
