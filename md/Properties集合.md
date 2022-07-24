@@ -9,11 +9,18 @@ System.out.println(prop);
 prop.remove("赛文");//删除元素
 #### 根据key获得value
 System.out.println(prop.get("迪迦"));//打印奥特曼
-#### 遍历获取
-Set<Object> keys=prop.keySet();
-  for(Object key:keys){
-   Object value=prop.get(key);
-   System.out.println(key+"="+value);
-  }
+#### 遍历获取所有键值
+Set<Object> keys=prop.keySet();    
+for(Object key:keys){  
+   Object value=prop.get(key);  
+   System.out.println(key);  
+};
+#### 获取所有键值对
+Set<Map.Entry<Object,object>> entries keys=prop.entrySet();     
+for(Map.Entry<Object,Object>entry:entries){    
+   Object key =entry.getKey(); 
+   Object value=entry.getValue();
+   System.out.println(key+":"+value);  
+} 
 
 
