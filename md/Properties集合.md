@@ -37,4 +37,11 @@ FileReader fr=new FileReader("prop.properties");
 prop.load(fr);//集合加载文件中的数据  
 fr.close();  
 System.out.println(prop);
-
+#### 将键值对写入文件
+Properties prop=new Properties();
+FileWriter fw=new FileWriter("prop.properties");
+prop.put("myCat","3");
+prop.store(fw,"abc");//abc是注释
+prop.store(fw,null);//注释为null
+fw.close();
+   
