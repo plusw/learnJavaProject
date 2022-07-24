@@ -31,5 +31,10 @@ for(Map.Entry<Object,Object>entry:entries){
    Object value=entry.getValue();  
    System.out.println(key+":"+value);    
 } 
-
+#### 读取后缀名为properties文件(文件中存储的是键值对)
+Properties prop=new Properties();  
+FileReader fr=new FileReader("prop.properties");  
+prop.load(fr);//集合加载文件中的数据  
+fr.close();
+System.out.println(prop);
 
