@@ -25,6 +25,7 @@ byte[] data=dp.getData();
 System.out.println(new String(data));
 //释放资源
 ds.close();
+```
 #### udp三种通信方式
 ##### 单播
 一个发送端发送给一个接收端   
