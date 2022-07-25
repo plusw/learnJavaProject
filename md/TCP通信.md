@@ -8,7 +8,7 @@ os.write("hello".getBytes());
 os.close();
 socket.close();
 ```
-### tcp服务器端
+#### tcp服务器端
 ```java
 ServerSocket s=new ServerSocket(10000);//监听10000端口
 Socket accept=s.accept();//一直等待接收，会阻塞线程,accept是Socket对象
