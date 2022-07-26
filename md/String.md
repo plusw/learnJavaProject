@@ -35,3 +35,5 @@ s.startsWith("张");//判断开头的字符
 
 ##### 字符串转字节数组
 byte[] a=s.getBytes();
+##### int转String
+String s=Integer.toString(i);
