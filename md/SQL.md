@@ -34,3 +34,24 @@ create table tb_user(#创建表tb_user
     -> );  
 ```
 
+```mysql
+drop table tb_user;#删除表  
+
+drop table if exists tb_users;#如果表存在就删除  
+
+alter table tb_user rename to tb;#将表的名字tb_user修改为tb  
+
+alter table tb add id char(8);#在表中添加新的一列  
+
+alter table tb modify id varchar(8);#修改id的数据类型  
+
+alter table tb change id idcard char(18);#修改id的名字和数据类型  
+
+alter table tb drop name;#删除tb表中的name
+```
+
+
+
+
+
+
