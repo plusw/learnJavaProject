@@ -18,7 +18,7 @@ use db1;#使用db1数据库
 select database();#查询当前正在使用的数据库
 ```
 #### DDL操作数据库中的表
-```
+```mysql
 show tables;#显示该数据库下的表  
 
 desc myTable;#查询myTable表的结构  
