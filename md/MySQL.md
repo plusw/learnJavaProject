@@ -1,5 +1,7 @@
 ## MYSQL
 #### cmd操作MYSQL的命令
+mysqld --initialize-insecure//初始化mysql  
+
 mysqld -install//将mysql安装到windows服务里
 
 net start mysql//cmd启动mysql  
