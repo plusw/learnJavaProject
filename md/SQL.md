@@ -54,6 +54,8 @@ alter table tb drop name;#删除tb表中的name
 SELECT * FROM tb_user;#查询表中所有数据
 
 INSERT  INTO tb_user(NAME,age,id) VALUES('王佳',23,007);#表中添加数据
+
+INSERT  INTO tb_user VALUES('王嘉佳',23,007);#给所有行添加数据
 ```
 
 
