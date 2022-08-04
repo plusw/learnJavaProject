@@ -49,8 +49,10 @@ alter table tb change id idcard char(18);#修改id的名字和数据类型
 
 alter table tb drop name;#删除tb表中的name
 ```
-
-
+#### DML操作数据
+```
+SELECT * FROM tb_user;#查询表中所有数据
+```
 
 
 
