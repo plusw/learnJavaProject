@@ -1,5 +1,8 @@
 ## question
-6.19  java不用ide如何导包？     
+6.19  java不用ide如何导包？ 
+```
+jar -cvf hi.jar HelloJar.class //将.class打包成jar
+```
 ```diff
  已解决
 ```
