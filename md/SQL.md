@@ -64,7 +64,7 @@ UPDATE tb_user SET id = '119' WHERE NAME='柯文哲';#修改表中数据
 ELETE FROM tb_user WHERE NAME='王佳';#删除表中数据
 
 CREATE TABLE tb2(
-id INT PRIMARY KEY, --id主键且自增长
+id INT PRIMARY KEY auto_increment, --id主键且自增长
 NAME VARCHAR(20) NOT NULL UNIQUE, --员工姓名，非空且唯一
 bonus DOUBLE(7,2) DEFAULT 0 --奖金默认为0
 );
