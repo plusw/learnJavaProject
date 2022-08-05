@@ -62,13 +62,27 @@ INSERT  INTO tb_user VALUES('王嘉佳',23,007),('李昌钰',23,007),('柯文哲
 UPDATE tb_user SET id = '119' WHERE NAME='柯文哲';#修改表中数据
 
 ELETE FROM tb_user WHERE NAME='王佳';#删除表中数据
-
+```
+#### 约束
+```mysql
 CREATE TABLE tb2(
 id INT PRIMARY KEY auto_increment, --id主键且自增长
 NAME VARCHAR(20) NOT NULL UNIQUE, --员工姓名，非空且唯一
 bonus DOUBLE(7,2) DEFAULT 0 --奖金默认为0
 );
 
+#外键约束
+CREATE TABLE dept2(
+id INT PRIMARY KEY, 
+dep_name VARCHAR(20) 
+);
+
+CREATE TABLE emp3(
+id INT PRIMARY KEY, 
+NAME VARCHAR(20) NOT NULL UNIQUE, 
+dept_id INT,
+CONSTRAINT fk_emp3_dept FOREIGN KEY(dept_id) REFERENCES dept2(id)
+);
 ```
 
 
