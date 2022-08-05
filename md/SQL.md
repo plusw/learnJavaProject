@@ -81,7 +81,7 @@ CREATE TABLE emp3(
 id INT PRIMARY KEY, 
 NAME VARCHAR(20) NOT NULL UNIQUE, 
 dept_id INT,
-CONSTRAINT fk_emp3_dept FOREIGN KEY(dept_id) REFERENCES dept2(id)
+CONSTRAINT fk_emp3_dept FOREIGN KEY(dept_id) REFERENCES dept2(id)#建立两张表之间的外键约束
 );
 ```
 
