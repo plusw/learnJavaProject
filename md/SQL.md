@@ -85,6 +85,8 @@ CONSTRAINT fk_emp3_dept FOREIGN KEY(dept_id) REFERENCES dept2(id)#建立两张�
 );
 
 ALTER TABLE emp3 DROP FOREIGN KEY fk_emp3_dept;#删除外键
+
+ALTER TABLE emp add constraint fk_emp_empt foreign key(dept_id) references dept(id);#建完表后,添加外键
 ```
 
 
