@@ -83,8 +83,9 @@ NAME VARCHAR(20) NOT NULL UNIQUE,
 dept_id INT,
 CONSTRAINT fk_emp3_dept FOREIGN KEY(dept_id) REFERENCES dept2(id)#建立两张表之间的外键约束
 );
-```
+
 ALTER TABLE emp3 DROP FOREIGN KEY fk_emp3_dept;#删除外键
+```
 
 
 
