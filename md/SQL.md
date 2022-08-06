@@ -33,18 +33,6 @@ create table tb_user(#创建表tb_user
     -> status tinyint # tinyint表示从 0 到 255 的整型数据。存储大小为 1 字节。  
     -> );  
 ```
-#### 多表查询
-```
-select * from emp,dept;#这样查询两个表会产生笛卡尔积:有A,B所有的组合情况
-
-select * from emp,dept where emp.dep_id=dept.did;#这样查询两张表可以过滤一些不合理的情况
-
-select emp.name,emp.gender,dept.dname from emp,dept where emp.dep_id=dept.did;#查询两张表中的特定的值
-
-select * from emp inner join dept on emp.dep_id=dept.did;#显示内连接查询表(查询两张表的交集)
-
-select * from emp join dept on emp.dep_id=dept.did;#显示内连接查询表,inner可以省略
-```
 ```mysql
 drop table tb_user;#删除表  
 
@@ -99,6 +87,17 @@ ALTER TABLE emp3 DROP FOREIGN KEY fk_emp3_dept;#删除外键
 
 ALTER TABLE emp add constraint fk_emp_empt foreign key(dept_id) references dept(id);#建完表后,添加外键
 ```
+#### 多表查询
+```mysql
+select * from emp,dept;#这样查询两个表会产生笛卡尔积:有A,B所有的组合情况
 
+select * from emp,dept where emp.dep_id=dept.did;#这样查询两张表可以过滤一些不合理的情况
+
+select emp.name,emp.gender,dept.dname from emp,dept where emp.dep_id=dept.did;#查询两张表中的特定的值
+
+select * from emp inner join dept on emp.dep_id=dept.did;#显示内连接查询表(查询两张表的交集)
+
+select * from emp join dept on emp.dep_id=dept.did;#显示内连接查询表,inner可以省略
+```
 
 
