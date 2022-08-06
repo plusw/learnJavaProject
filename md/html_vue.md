@@ -1,0 +1,17 @@
+```html
+<div id="app">
+	<input name="username" v-model="username">
+	{{username}}<!--插值表表达式-->
+</div>
+<script src="vue.js"></script>
+<script>
+  new Vue({
+    el:"#app",
+    data(){ 
+      return{
+        username:""
+      }
+    }
+  })
+</script>
+```
