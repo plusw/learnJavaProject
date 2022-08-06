@@ -40,6 +40,10 @@ select * from emp,dept;#这样查询两个表会产生笛卡尔积:有A,B所有�
 select * from emp,dept where emp.dep_id=dept.did;#这样查询两张表可以过滤一些不合理的情况
 
 select emp.name,emp.gender,dept.dname from emp,dept where emp.dep_id=dept.did;#查询两张表中的特定的值
+
+select * from emp inner join dept on emp.dep_id=dept.did;#显示内连接查询表(查询两张表的交集)
+
+select * from emp join dept on emp.dep_id=dept.did;#显示内连接查询表,inner可以省略
 ```
 ```mysql
 drop table tb_user;#删除表  
