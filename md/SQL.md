@@ -7,6 +7,8 @@ show databases;#查询数据库名称
 
 create database db1;#创建一个数据库,名字是db1  
 
+create database dbtest2 character set utf8;#创建一个数据库,以utf8格式进行编码
+
 create database if not exists db1;#如果数据库不存在就创建  
 
 drop database db2;#删除db2数据库  
