@@ -1,0 +1,29 @@
+<div id="app">
+	<div v-for="addr in arr">
+	{{addr}}<br>
+	</div>
+	
+	<div v-for="(addr,i) in arr">
+		{{i}}--{{addr}}<br>
+	</div>
+</div>
+<script src="vue.js"></script> 
+<script>
+new Vue({
+	el:"#app",
+	data(){ 
+		
+		return{
+			username:"",
+			url:"https://www.youtube.com/",
+			count:3,
+			arr:["西瓜","葡萄","花生"]
+		}
+	},
+	methods:{
+	 show(){
+		alert("我被点亮");
+	 }
+	}
+})
+</script>

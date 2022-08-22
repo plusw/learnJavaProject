@@ -1,0 +1,17 @@
+<div id="app">
+	<a v-bind:href="url">点击一下</a>
+	<a :href="url">点击下</a>
+	<input v-model="url">
+</div>
+<script src="vue.js"></script>
+<script>
+new Vue({
+	el:"#app",
+	data(){ 
+		
+		return{
+			url:"https://www.youtube.com/"
+		}
+	}
+})
+</script>
