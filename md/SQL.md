@@ -91,7 +91,7 @@ ALTER TABLE emp add constraint fk_emp_empt foreign key(dept_id) references dept(
 ```
 #### 多表查询
 ```mysql
-select * from emp,dept;#这样查询两个表会产生笛卡尔积:有A,B所有的组合情况
+select * from emp,dept;#这样查询两个表会产生笛卡尔积:有A,B两张表所有的组合情况
 
 select * from emp,dept where emp.dep_id=dept.did;#这样查询两张表可以过滤一些不合理的情况
 
