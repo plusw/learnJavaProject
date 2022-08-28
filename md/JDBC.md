@@ -35,3 +35,13 @@ commit();
 //回滚事务
 rollback();
 ```
+#### jabc statement执行SQL
+```
+int count=executeUpdate(sql);//执行DDL,DML语句
+executeQuery(sql);//执行DQL语句,返回值为ResultSet 
+```
+
+
+
+
+
