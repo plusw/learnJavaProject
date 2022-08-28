@@ -38,7 +38,7 @@ rollback();
 #### jabc statement执行SQL
 ```java
 int count=executeUpdate(sql);//执行DDL,DML语句
-executeQuery(sql);//执行DQL语句,返回值为ResultSet 
+executeQuery(sql);//执行DQL语句,返回值为ResultSet,ResultSet封装了查询语句的结果
 ```
 
 
