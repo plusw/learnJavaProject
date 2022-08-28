@@ -26,3 +26,12 @@ public class Test{
 	}
 }
 ```
+#### jdbc事务管理
+```java
+//开启事务
+setAutoCommit(ture);//true为自动提交事务，false为手动提交
+//提交事务
+commit();
+//回滚事务
+rollback();
+```
