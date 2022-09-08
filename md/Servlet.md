@@ -31,7 +31,7 @@ public class ServletDemo1 implements Servlet {
     }
 
     @Override
-    public void init(ServletConfig config) throws ServletException {
+    public void init(ServletConfig config) throws ServletException {//init 在servlet被创建时会调用一次
 
     }
 
