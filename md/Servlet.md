@@ -10,7 +10,7 @@
         </dependency>
 </dependencies>
 ```
-## 定义一个类继承servlet接口
+#### 定义一个类继承servlet接口
 ```java
 public class ServletDemo1 implements Servlet {
 
