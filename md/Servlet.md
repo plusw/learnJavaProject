@@ -15,7 +15,7 @@
 public class ServletDemo1 implements Servlet {
 
 
-    @Override
+    @Override//每一次servlet被访问时调用
     public void service(ServletRequest req, ServletResponse res) throws ServletException, IOException {
         System.out.println("servlet hello world~");
     }
