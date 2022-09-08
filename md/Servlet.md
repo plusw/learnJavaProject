@@ -25,7 +25,7 @@ public class ServletDemo1 implements Servlet {
         return null;
     }
 
-    @Override
+    @Override//当服务器被关闭的时候会调用一次
     public void destroy() {
 
     }
