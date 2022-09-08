@@ -41,7 +41,8 @@ public class ServletDemo1 implements Servlet {
     }
 }
 ```
-## servlet生命周期
+#### servlet生命周期
 ```java
-@WebServlet(urlPatterns="/demo",loadOnStartup=1);//loadOnStartup为负整数：第一次被访问时创建Servlet对象;0或正整数服务器启动时创建对象，数字越小优先级越高
+@WebServlet(urlPatterns="/demo",loadOnStartup=1);//loadOnStartup为负整数：第一次被访问时创建Servlet对象;0或正整数服务器启动时创建
+对象，数字越小优先级越高
 ```
