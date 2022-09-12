@@ -29,5 +29,12 @@ String getParameter(String name);//根据键值获取单个值
 ```
 #### 请求转发:服务器资源跳转
 ```java
- req.getRequestDispatcher("资源B路径").forward(req,resp);
+ req.getRequestDispatcher("资源B路径").forward(req,resp); //服务器资源跳转,网页地址不改变
  ```
+ 不同资源间共享数据
+ ```java
+ void setAttribute(String name,Object o);//存储数据到request域中
+ Object getAttribute(String name);//根据key获取值
+ void removeAttribute(String name);//根据key删除该键值对
+ ```
+ 
