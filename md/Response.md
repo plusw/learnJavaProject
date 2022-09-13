@@ -11,7 +11,10 @@ void setHeader(String name,String value)
 PrintWriter getWriter();//获取字符输出流
 ServletOutputSteam getOutputStream();//获取字节输出流
 //设置字符数据的响应体
+//response.setHeader("content-type","text/html");
+response.setContentType("text/html;charset=utf-8");
 PrintWriter writer=response.getWriter();
+writer.write("aaa");
 writer.write("<h1>你好</h1>");
 ```
 #### 重定向
