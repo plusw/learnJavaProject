@@ -10,6 +10,9 @@ void setHeader(String name,String value)
 //设置响应体
 PrintWriter getWriter();//获取字符输出流
 ServletOutputSteam getOutputStream();//获取字节输出流
+//设置字符数据的响应体
+PrintWriter writer=response.getWriter();
+writer.write("<h1>你好</h1>");
 ```
 #### 重定向
 ```java
