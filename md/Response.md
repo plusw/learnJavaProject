@@ -1,3 +1,6 @@
+```java
+String contextPath=request.getContextPath();//动态获取项目目录
+```
 #### 设置响应数据
 ```java
 //设置响应状态码
