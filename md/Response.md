@@ -1,7 +1,18 @@
-#### 设置响应状态码
+## 响应体，响应头
+```java
+//设置响应状态码
 void setStatus(int sc);
-#### 设置响应头键值对
+//设置响应头键值对
 void setHeader(String name,String value)
-#### 设置响应体
+//设置响应体
 PrintWriter getWriter();//获取字符输出流
 ServletOutputSteam getOutputStream();//获取字节输出流
+```
+```java
+//重定向响应状态码是302
+//实现重定向
+resp.setStatus(302);
+resp.setHeader("location","资源B的路径");
+//通过简化方式实现重定向
+response.sendRedirect()"资源B的路径");
+```
