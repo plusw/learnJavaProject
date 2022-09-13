@@ -1,4 +1,3 @@
-## 响应体，响应头
 ```java
 //设置响应状态码
 void setStatus(int sc);
