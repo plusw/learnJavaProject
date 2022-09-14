@@ -26,3 +26,20 @@ resp.setHeader("location","资源B的路径");
 //通过简化方式实现重定向
 response.sendRedirect()"资源B的路径");
 ```
+#### 通过字节输出流设置响应体
+```java
+//方法1，使用流输出
+FileInputStream fis=new FileInputStream("d://a.jpg");//读取文件
+ServletOutputStream os  =response.getOutputStream();//获取字节输出流，赋值给ServletOutputStream
+byte[] buff=new byte[1024];
+int len=0;
+while((len=fis.read(buff)!=-1){
+  os.write(buff,0,len);  
+}
+fis.close();
+//方法2,用流的copy
+FileInputStream fis=new FileInputStream("d://a.jpg");//读取文件
+ServletOutputStream os  =response.getOutputStream();//获取字节输出流，赋值给ServletOutputStream
+IOUtils.copy(fis,os);
+fis.close();
+```
