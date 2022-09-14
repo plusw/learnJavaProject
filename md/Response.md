@@ -43,3 +43,13 @@ ServletOutputStream os  =response.getOutputStream();//获取字节输出流，�
 IOUtils.copy(fis,os);
 fis.close();
 ```
+#### IOUtils工具类的使用
+1.导入坐标
+```xml
+<dependency>
+  <groupld>commons-io</groupld>
+  <artifactld>commons-io</artifactld>
+  <version>2.6</version2.6>
+ </dependency> 
+```
+2.使用IOUtils.copy(输入流,输出流);
