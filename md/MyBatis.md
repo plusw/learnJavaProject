@@ -30,7 +30,7 @@ MyBatis将硬编码放到配置文件，自动完成操作繁琐的工作;
             <version>1.2.3</version>
         </dependency>	
 ```
-2.编写MyBits核心配置文件
+2.编写MyBits核心配置文件,用户名，密码等
 ```xml
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE configuration
