@@ -49,6 +49,7 @@ MyBatis将硬编码放到配置文件，自动完成操作繁琐的工作;
     </environment>
   </environments>
   <mappers>
+    <!--加载sql映射文件-->
     <mapper resource="org/mybatis/example/BlogMapper.xml"/>
   </mappers>
 </configuration>
