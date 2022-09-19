@@ -16,7 +16,7 @@ System.out.println(value);
 Cookie cookie = new Cookie("username",value);
 ```
 #### 请求Cookie  
-1. 获取Cookie数组  
+1.获取Cookie数组  
 ```java
 Cookie[] cookies= request.getCookies();
 ```
