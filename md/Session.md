@@ -17,8 +17,11 @@ System.out.println(username);
 4.session销毁
 默认情况下，session30分钟自动销毁 
 设置session销毁时间
-```java
+```xml
 <session-config>
   <session-timeout>100</session-timeout>  
 </session-config>
+```
+```java
+session.invalidate();
 ```
