@@ -15,7 +15,7 @@ value=URLEncoder.encode(value,"UTF-8");//将中文转换为utf-8编码,再传入
 System.out.println(value);
 Cookie cookie = new Cookie("username",value);
 ```
-#### 请求Cookie
+#### 请求Cookie  
 1. 获取Cookie数组  
 ```java
 Cookie[] cookies= request.getCookies();
