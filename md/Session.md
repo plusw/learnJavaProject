@@ -23,5 +23,5 @@ System.out.println(username);
 </session-config>
 ```
 ```java
-session.invalidate();
+session.invalidate();//销毁session
 ```
