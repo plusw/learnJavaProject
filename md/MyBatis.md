@@ -1,18 +1,18 @@
-## MyBatis
+## MyBatis介绍
 MyBatis 是一款持久层框架, MyBatis 简化了的JDBC代码, 设置参数和封装结果的工作;  
 JDBC缺点：1.硬编码(注册驱动，连接数据库)2.操作繁琐(需要设置参数,手动封装结果);  
 MyBatis将硬编码放到配置文件，自动完成操作繁琐的工作;   
 
-使用mybatis查询所有
-1.在数据库中创建表
-2.根据模块创建项目导入坐标在pom.xml中
-3.编写mybatis核心配置文件-->替换连接信息，解决硬编码
-4.编写sql映射文件-->统一管理sql语句,解决硬编码
-5.测试执行代码
-        (1)定义POJO类
-        (2)加载核心配置文件,获取SqlSessionFactory对象
-        (3)获取SqlSession对象，执行SQL语句
-        (4)释放资源
+## 使用mybatis查询所有
+### 1.在数据库中创建表
+### 2.根据模块创建项目导入坐标在pom.xml中
+### 3.编写mybatis核心配置文件-->替换连接信息，解决硬编码
+### 4.编写sql映射文件-->统一管理sql语句,解决硬编码
+### 5.测试执行代码
+        (1)定义POJO类  
+        (2)加载核心配置文件,获取SqlSessionFactory对象  
+        (3)获取SqlSession对象，执行SQL语句  
+        (4)释放资源  
 
 
 #### [MyBatis快速入门](https://mybatis.org/mybatis-3/zh/getting-started.html)
