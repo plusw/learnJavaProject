@@ -17,6 +17,7 @@
  [Session](https://github.com/plusw/learnJavaProject/blob/main/md/Session.md)&emsp;&emsp;&emsp;
  [MyBatis实例](https://github.com/plusw/learnJavaProject/blob/main/md/MyBatis实例.md)&emsp;&emsp;&emsp;
  [Web综合案例](https://github.com/plusw/learnJavaProject/blob/main/md/Web综合案例.md)&emsp;&emsp;&emsp;
+ [AJAX](https://github.com/plusw/learnJavaProject/blob/main/md/AJAX.md)&emsp;&emsp;&emsp;
 ## QUESTION  :bug:
 [QUESTION](https://github.com/plusw/learnJavaProject/blob/main/md/question.md)
 
