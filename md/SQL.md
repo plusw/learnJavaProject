@@ -27,13 +27,13 @@ desc myTable;#查询myTable表的结构
 ```
 ```mysql
 create table tb_user(#创建表tb_user  
-    -> name varchar(20), #创建表头;字符串类型是varchar(),20表示最大长度,varchar()长度存储长度可变  
-    -> id char(8),#char(8)存储长度为定值  
-    -> age int,  
-    -> score double(5,2),#5表示整体长度，2表示保留2位小数  
-    -> birthday data,  
-    -> status tinyint # tinyint表示从 0 到 255 的整型数据。存储大小为 1 字节。  
-    -> );  
+     name varchar(20), #创建表头;字符串类型是varchar(),20表示最大长度,varchar()长度存储长度可变  
+     id char(8),#char(8)存储长度为定值  
+     age int,  
+     score double(5,2),#5表示整体长度，2表示保留2位小数  
+     birthday data,  
+     status tinyint # tinyint表示从 0 到 255 的整型数据。存储大小为 1 字节。  
+     );  
 ```
 ```mysql
 drop table tb_user;#删除表  
